@@ -3,11 +3,11 @@ import styles from "../styles/Home.module.css";
 export const getStaticProps = async (context) => {
   let postData = await axios
     .get(
-      `https://3pupscript.globexcorp.net/wp-json/wp/v2/pages/?slug=test-page`
+      `https://3pupscript.globexcorp.net/wp-json/wp/v2/pages/?slug=treatment-gor-hairloss`
     )
     .then((_) => {
       let { data = [] } = _;
-      console.log("ssss", data);
+      console.log("abcd", data);
       let { ACF } = data[0];
       return ACF || "";
     });

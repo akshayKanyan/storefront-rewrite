@@ -4,8 +4,11 @@ import "../styles/globals.css";
 const theme = {
   fonts: {
     h1: 38,
-    h2: "30px",
-    h3: "20px",
+    h2: 30,
+    h3: 20,
+    p1: 18,
+    p2: 16,
+    p3: 14
   },
 };
 
