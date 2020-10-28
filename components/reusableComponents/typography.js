@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 export const H1 = styled.h1`
@@ -37,7 +36,12 @@ export const P3 = styled.p`
   }};
 `;
 
-export const Div = styled.div`
-  height: "100px";
-  width: "100px";
+export const Sh = styled.p`
+  font-weight: bold;
+  color: ${(props) => {
+    return props.theme.constCustomColors.USGreen;
+  }};
+  font-size: ${(props) => {
+    return props.theme.fonts.sh + "px";
+  }};
 `;

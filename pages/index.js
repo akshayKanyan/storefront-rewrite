@@ -7,7 +7,6 @@ export const getStaticProps = async (context) => {
     )
     .then((_) => {
       let { data = [] } = _;
-      console.log("abcd", data);
       let { ACF } = data[0];
       return ACF || "";
     });
